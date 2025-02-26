@@ -8,7 +8,7 @@ import paho.mqtt.client as mqtt
 
 # Firebase configuration
 firebaseConfig = {
-    "apiKey": "AIzaSyBJf82tOKBPoZtd0G3t_JwPXEsrliG2bZg",
+    #"apiKey": "_apiKey_",
     "authDomain": "smart-parking-system-b07b5.firebaseapp.com",
     "databaseURL": "https://smart-parking-system-b07b5-default-rtdb.firebaseio.com",
     "projectId": "smart-parking-system-b07b5",
@@ -18,7 +18,7 @@ firebaseConfig = {
 # Initialize Firebase
 firebase = pyrebase.initialize_app(firebaseConfig)
 auth = firebase.auth()
-user = auth.sign_in_with_email_and_password("wongyeeen0822@gmail.com", "abc123")
+user = auth.sign_in_with_email_and_password("123@gmail.com", "abc123")
 db = firebase.database()
 storage = firebase.storage()
 
